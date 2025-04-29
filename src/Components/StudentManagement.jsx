@@ -69,11 +69,13 @@ const onUpdateHandler=(student,id)=>{
 
 }
   return (
-    <div>
-      <AddEditStudentForm onUpdateHandler={onUpdateHandler} onAddHandler={onAddHandler}   currentStudent={CurrentStudent} 
+  <div className='flex flex-col items-center justify-start bg-gray-600 m-4 p-4 rounded-lg overflow-y-auto max-h-[70vh]'>
+
+      <AddEditStudentForm  onUpdateHandler={onUpdateHandler} onAddHandler={onAddHandler}   currentStudent={CurrentStudent} 
       />
 
-<table border={1}>
+<table border={1} className='table-auto bg-blue-500 text-blue-950 text-2xl border-blue-900 border-3 rounded-lg'>
+  <caption className='text-2xl text-center text-white bg-blue-950'>Student Management App</caption>
   <thead>
     <tr>
         <th>ID</th>

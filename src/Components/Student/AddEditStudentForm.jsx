@@ -46,14 +46,15 @@ const AddEditStudentForm = (props) => {
 
   }
   return (
-    <div>
+    <div className='bg-gray-400  p-2 rounded-lg m-2'>
       <span style={{backgroundColor:'red',color:'white'}}>{Error}</span>
-      <br />
-      <input value={Name} type="text" placeholder='Enter your Name' onChange={(e)=>setName(e.target.value)}/>
-      <input value={Age} type="text" placeholder='Enter your Age'onChange={(e)=>setAge(e.target.value)}/>
-      <input value={Cell} type="text" placeholder='Enter you Cell No.' onChange={(e)=>setCell(e.target.value)}/>
+      <br/>
+      <input className='bg-blue-500 text-blue-950 text-lg border-blue-950 border-3  m-1 pl-1' value={Name} type="text" placeholder='Enter the Name' onChange={(e)=>setName(e.target.value)}/>
+      <input className='bg-blue-500 text-blue-950 text-lg border-blue-950 border-3  m-1 pl-1' value={Age} type="text" placeholder='Enter the Age'onChange={(e)=>setAge(e.target.value)}/>
+      <input className='bg-blue-500 text-blue-950 text-lg border-blue-950 border-3  m-1 pl-1' value={Cell} type="text" placeholder='Enter Cell No.' onChange={(e)=>setCell(e.target.value)}/>
     <br />
-      <button onClick={onClickHandler}>
+
+      <button onClick={onClickHandler} className='border-blue-500 border-2 bg-blue-950 text-white text-xl p-2 rounded-lg '>
         {/* {props.currentStudent? "Update" : "Add"}  */}
         {props.currentStudent?.id ? "Update" : "Add"}
 
