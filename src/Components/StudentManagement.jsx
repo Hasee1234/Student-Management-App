@@ -5,7 +5,7 @@ import AddEditStudentForm from './Student/AddEditStudentForm'
 const StudentManagement = () => {const [Data, setData] = useState([
     {
         id:1,
-        name:"haseeb",
+        name:"Haseeb",
         Age:20,
         Cell:12345
       },
@@ -21,12 +21,7 @@ const StudentManagement = () => {const [Data, setData] = useState([
         Age:20,
         Cell:12977
       },
-      {
-        id:4,
-        name:"hamza",
-        Age:19,
-        Cell:10998
-      },
+      
 ])
 const [CurrentStudent, setCurrentStudent] = useState(null)
 
@@ -75,13 +70,13 @@ const onUpdateHandler=(student,id)=>{
       />
 
 <table border={1} className='table-auto bg-blue-500 text-blue-950 text-2xl border-blue-900 border-3 rounded-lg'>
-  <caption className='text-2xl text-center text-white bg-blue-950'>Student Management App</caption>
+  <caption className='text-2xl text-center text-white bg-blue-950'>Enrolled Students</caption>
   <thead>
     <tr>
-        <th>ID</th>
-        <th>Name</th>
-        <th>Age</th>
-        <th>Cell</th>
+        <th className='border-blue-950 border-3 p-1 '>ID</th>
+        <th className='border-blue-950 border-3 p-1'>Name</th>
+        <th className='border-blue-950 border-3 p-1'>Age</th>
+        <th className='border-blue-950 border-3 p-1'>Cell No.</th>
     </tr>
   </thead>
   <tbody >

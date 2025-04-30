@@ -46,7 +46,7 @@ const AddEditStudentForm = (props) => {
 
   }
   return (
-    <div className='bg-gray-400  p-2 rounded-lg m-2'>
+    <div className='bg-gray-400  p-2  rounded-lg m-2'>
       <span style={{backgroundColor:'red',color:'white'}}>{Error}</span>
       <br/>
       <input className='bg-blue-500 text-blue-950 text-lg border-blue-950 border-3  m-1 pl-1' value={Name} type="text" placeholder='Enter the Name' onChange={(e)=>setName(e.target.value)}/>
